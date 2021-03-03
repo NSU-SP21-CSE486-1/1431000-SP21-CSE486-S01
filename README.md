@@ -18,7 +18,7 @@
 <p align="center"><strong>ID</strong><strong>:&nbsp; </strong>1431000</p>
 <p align="center"><strong>Email</strong><strong>:</strong> <a href="mailto:mahmud.ahmed@northsouth.edu">mahmud.ahmed@northsouth.edu</a></p>
 
-<p align="center"><strong>Git Repository</strong><strong>: </strong><a href="https://github.com/NSU-SP21-CSE486-1/1712508-SP21-CSE486-S01">https://github.com/NSU-SP21-CSE486-1/1712508-SP21-CSE486-S01</a></p>
+<p align="center"><strong>Git Repository</strong><strong>: </strong><a href="https://github.com/NSU-SP21-CSE486-1/1431000-SP21-CSE486-S01">https://github.com/NSU-SP21-CSE486-1/1431000-SP21-CSE486-S01</a></p>
 
 <p align="center"><strong>Date Prepared</strong><strong>: </strong>March 03, 2021</p>
 <p><strong>&nbsp;</strong></p>
