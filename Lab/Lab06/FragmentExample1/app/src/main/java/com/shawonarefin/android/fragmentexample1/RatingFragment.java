@@ -1,6 +1,5 @@
 package com.shawonarefin.android.fragmentexample1;
 
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,25 +20,27 @@ public class RatingFragment extends Fragment {
 
     }
 
-
     @Override
-    public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final View rootView = inflater.inflate(R.layout.fragment_rating, container,
-                false);
+
+    //Article Like? Yes-No RadioButtons
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        final View rootView = inflater.inflate(R.layout.fragment_rating,
+                container, false);
+
         final RadioGroup radioGroup = rootView.findViewById(R.id.radio_group);
         final RatingBar ratingBar = rootView.findViewById(R.id.ratingBar);
 
-          radioGroup.setOnCheckedChangeListener(((group, checkedId) ->  {
-            View radioButton = radioGroup.findViewById(radioButton);
+        radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
+            View radioButton = radioGroup.findViewById(checkedId);
             int index = radioGroup.indexOfChild(radioButton);
             TextView textView = rootView.findViewById(R.id.Fheader);
 
-            switch (index){
-                case YES:
-                    textView.setText("ARTICLE: Like");
+            switch (index) {
+                case YES: //User "Yes"
+                    textView.setText("ARTICLE Liked!");
                     break;
                 case NO: // User "No".
-                    textView.setText(R.string.no_message);
+                    textView.setText("ARTICLE Disliked!");
                     break;
                 default: // No choice made.
                     // Do nothing.
@@ -47,19 +48,14 @@ public class RatingFragment extends Fragment {
             }
         });
 
-                ratingBar.setOnRatingBarChangeListener(
-                        (ratingBar1, rating, fromUser) -> {
+        //Setting the rating is set in onCheckedChanged Listener; The sliding StarRating
+        ratingBar.setOnRatingBarChangeListener(
+                (ratingBar1, rating, fromUser) -> {
                     String UserRating = ("User Rating: " + String.valueOf(ratingBar1.getRating()));
-                    Toast.makeText(getContext(), UserRating, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), UserRating, Toast.LENGTH_LONG).show(); //Return Toast Messages.
                 }
-        ); return rootView; //return the message
-
+        );
+        return rootView; //return the message
 
     }
 }
-
-
-
-
-
-
