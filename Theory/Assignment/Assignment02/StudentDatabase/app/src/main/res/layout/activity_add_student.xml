@@ -7,17 +7,17 @@
     tools:context=".uicontroller.AddStudentActivity">
 
     <TextView
-        android:id="@+id/age_label"
+        android:id="@+id/department_label"
         android:layout_width="62dp"
         android:layout_height="22dp"
         android:layout_marginTop="30dp"
         android:text="@string/age_label_text"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/name_label"
-        app:layout_constraintTop_toBottomOf="@+id/name_label" />
+        app:layout_constraintStart_toStartOf="@+id/school_label"
+        app:layout_constraintTop_toBottomOf="@+id/school_label" />
 
     <TextView
-        android:id="@+id/name_label"
+        android:id="@+id/school_label"
         android:layout_width="63dp"
         android:layout_height="22dp"
         android:layout_marginStart="10dp"
@@ -28,14 +28,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/id_label"
+        android:id="@+id/dob_label"
         android:layout_width="62dp"
         android:layout_height="23dp"
         android:layout_marginTop="30dp"
         android:text="@string/id_label_text"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="@+id/age_label"
-        app:layout_constraintTop_toBottomOf="@+id/age_label" />
+        app:layout_constraintStart_toStartOf="@+id/department_label"
+        app:layout_constraintTop_toBottomOf="@+id/department_label" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/main_activity_guideline"
@@ -54,7 +54,7 @@
         android:ems="10"
         android:hint="@string/enter_your_name_prompt"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/name_label"
+        app:layout_constraintBaseline_toBaselineOf="@+id/school_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/main_activity_guideline" />
 
@@ -66,7 +66,7 @@
         android:ems="10"
         android:hint="@string/enter_your_age_prompt"
         android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/age_label"
+        app:layout_constraintBaseline_toBaselineOf="@+id/department_label"
         app:layout_constraintEnd_toEndOf="@+id/editTextPersonName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextPersonName" />
@@ -79,7 +79,7 @@
         android:ems="10"
         android:hint="@string/enter_your_id_prompt"
         android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/id_label"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dob_label"
         app:layout_constraintEnd_toEndOf="@+id/editTextPersonAge"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextPersonAge" />
@@ -95,14 +95,27 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/next_button"
+        android:layout_width="91dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/next_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStudentID" />
+
+
+    <Button
         android:id="@+id/clear_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="76dp"
         android:text="@string/clear_button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/save_button" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextStudentID"
+        tools:layout_editor_absoluteX="85dp"
+        tools:ignore="MissingConstraints" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

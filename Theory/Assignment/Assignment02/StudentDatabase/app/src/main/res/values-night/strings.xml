@@ -9,4 +9,5 @@
     <string name="title_activity_display_student_ids">Student ID List</string>
     <string name="enter_your_id_prompt">Enter Your ID</string>
     <string name="edit_student_info_title">Edit Student Info</string>
+    <string name="enter_contact_details">Enter Contact details</string>
 </resources>

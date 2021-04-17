@@ -13,4 +13,5 @@
     <string name="clear_button_text">Clear</string>
     <string name="update_button_text">Update</string>
     <string name="title_add_new_student">Add New Student</string>
+    <string name="enter_contact_details">Enter Contact details</string>
 </resources>
