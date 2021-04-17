@@ -13,6 +13,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 @Database(entities = {StudentInfo.class}, version = 3)
+
 public abstract class AppDatabase extends RoomDatabase {
   public abstract StudentInfoDao studentInfoDao();
 

@@ -45,10 +45,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:text="Country"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/presentA_label" />
+
+    <EditText
+        android:id="@+id/presentcountry2"
+        android:layout_width="216dp"
+        android:layout_height="30dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter country"
+        android:textSize="9sp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="130dp" />
 
     <TextView
         android:id="@+id/country_label2"
@@ -145,7 +157,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:text="House No:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pc_label" />
@@ -179,6 +191,78 @@
         android:text="Police Station"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/po_label2" />
+
+    <EditText
+        android:id="@+id/presentps"
+        android:layout_width="216dp"
+        android:layout_height="30dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Police Station"
+        android:textSize="9sp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <EditText
+        android:id="@+id/presentroadno"
+        android:layout_width="216dp"
+        android:layout_height="30dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Road No."
+        android:textSize="9sp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <EditText
+        android:id="@+id/presenthouseno2"
+        android:layout_width="216dp"
+        android:layout_height="30dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter House No."
+        android:textSize="9sp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <EditText
+        android:id="@+id/presentpc"
+        android:layout_width="216dp"
+        android:layout_height="30dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Postal Code"
+        android:textSize="9sp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <EditText
+        android:id="@+id/presentpo2"
+        android:layout_width="216dp"
+        android:layout_height="30dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Post Office"
+        android:textSize="9sp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <EditText
+        android:id="@+id/presentdistrict2"
+        android:layout_width="216dp"
+        android:layout_height="30dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter District"
+        android:textSize="9sp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="159dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
