@@ -46,7 +46,7 @@ public class AddStudentActivity extends AppCompatActivity {
         String ageString = studentAgeEditText.getText().toString();
         Integer age = Integer.valueOf(ageString);
 
-        StudentInfo info = new StudentInfo(id, name, age);
+        StudentInfo info = new StudentInfo(id, name, age, schoolName);
         mWordViewModel.insert(info);
 
         studentAgeEditText.setText("");

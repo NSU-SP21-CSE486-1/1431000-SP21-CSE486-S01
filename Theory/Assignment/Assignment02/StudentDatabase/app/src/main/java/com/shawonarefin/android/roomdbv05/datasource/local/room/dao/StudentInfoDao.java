@@ -36,6 +36,7 @@ public interface StudentInfoDao {
   @Query("SELECT * FROM student_info WHERE id LIKE :studentID LIMIT 1")
   LiveData<StudentInfo> getStudent(Integer studentID);
 
+
   @Update
   void update(StudentInfo studentInfo);
 
