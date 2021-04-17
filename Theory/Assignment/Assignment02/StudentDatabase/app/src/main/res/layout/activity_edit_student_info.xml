@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uicontroller.EditStudentInfoActivity">
+
+    <TextView
+        android:id="@+id/page3_studentID_label_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/id_label_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/page3_studentID_display_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/id_label_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/page3_studentID_label_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/main_activity_guideline" />
+
+    <TextView
+        android:id="@+id/page3_studentNameLabel_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/name_label_text"
+        app:layout_constraintStart_toStartOf="@+id/page3_studentID_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/page3_studentID_label_textView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_activity_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="75dp" />
+
+    <EditText
+        android:id="@+id/page3_name_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/page3_studentNameLabel_textView"
+        app:layout_constraintEnd_toEndOf="@+id/page3_studentID_display_textView"
+        app:layout_constraintStart_toStartOf="@+id/page3_studentID_display_textView" />
+
+    <TextView
+        android:id="@+id/page3_studentAge_textView"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/age_label_text"
+        app:layout_constraintStart_toStartOf="@+id/page3_studentNameLabel_textView"
+        app:layout_constraintTop_toBottomOf="@+id/page3_studentNameLabel_textView" />
+
+    <EditText
+        android:id="@+id/page3_studentAge_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/page3_studentAge_textView"
+        app:layout_constraintEnd_toEndOf="@+id/page3_name_editText"
+        app:layout_constraintStart_toStartOf="@+id/page3_name_editText" />
+
+    <Button
+        android:id="@+id/page3_updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/update_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/page3_cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/page3_updateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/page3_updateButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

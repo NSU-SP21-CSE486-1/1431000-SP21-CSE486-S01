@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_label_text">Name:</string>
+    <string name="age_label_text">Age:</string>
+    <string name="enter_your_name_prompt">Enter Your Name</string>
+    <string name="id_label_text">Enter ID:</string>
+    <string name="save_button_text">Save</string>
+    <string name="next_button_text">Next</string>
+    <string name="title_activity_display_student_ids">Student ID List</string>
+    <string name="enter_your_id_prompt">Enter Your ID</string>
+    <string name="edit_student_info_title">Edit Student Info</string>
+</resources>
