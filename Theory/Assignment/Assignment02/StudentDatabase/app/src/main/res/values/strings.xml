@@ -17,10 +17,10 @@
 
 
     <string-array name="school_spinner">
-        <item>School of Business & Economics</item>
-        <item>School of Engineering & Physical Sciences</item>
-        <item>School of HUmanities & Social Sciences</item>
-        <item>School of Health & Life Sciences</item>
+        <item>School of Business and Economics</item>
+        <item>School of Engineering and Physical Sciences</item>
+        <item>School of Humanities and Social Sciences</item>
+        <item>School of Health and Life Sciences</item>
     </string-array>
 
 </resources>

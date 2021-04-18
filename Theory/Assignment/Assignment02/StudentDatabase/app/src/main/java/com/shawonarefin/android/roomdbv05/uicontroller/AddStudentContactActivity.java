@@ -14,10 +14,12 @@ import com.shawonarefin.android.roomdbv05.R;
 import com.shawonarefin.android.roomdbv05.datasource.local.room.entity.StudentInfo;
 import com.shawonarefin.android.roomdbv05.viewmodel.StudentInfoViewModel;
 
-public class AddStudentContactActivity extends AppCompatActivity {
+public class AddStudentContactActivity extends AddStudentPersonalinfoActivity{
+
+
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 }

@@ -278,8 +278,7 @@
         android:text="Enter District"
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="159dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="159dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
