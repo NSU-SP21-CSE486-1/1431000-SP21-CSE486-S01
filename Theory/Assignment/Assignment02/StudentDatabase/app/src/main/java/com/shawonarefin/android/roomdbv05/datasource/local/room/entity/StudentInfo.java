@@ -56,20 +56,20 @@ public class StudentInfo {
     private String pstation;
 
     @ColumnInfo(name = "pcode")
-    private Integer pcode;
+    private String pcode;
 
     @ColumnInfo(name = "houseno")
-    private Integer houseno;
+    private String houseno;
 
     @ColumnInfo(name = "roadno")
-    private Integer roadno;
+    private String roadno;
 
 
   public StudentInfo(@NonNull Integer studentID
           , String studentName
           , @NonNull Integer studentAge, String schoolName, String department,
                      Date dob, Integer phone, Integer nid,
-                     String country, String district, String poffice, String pstation, Integer pcode, Integer houseno, Integer roadno ){
+                     String country, String district, String poffice, String pstation, String pcode, String houseno, String roadno ){
 
                         this.studentID = studentID;
                         this.studentName = studentName;
@@ -114,11 +114,11 @@ public class StudentInfo {
 
   public void setPstation(String pstation) { this.pstation = pstation; }
 
-  public void setPcode(Integer pcode) { this.pcode = pcode; }
+  public void setPcode(String pcode) { this.pcode = pcode; }
 
-  public void setHouseno(Integer houseno) { this.houseno = houseno; }
+  public void setHouseno(String houseno) { this.houseno = houseno; }
 
-  public void setRoadno(Integer roadno) { this.roadno = roadno; }
+
 
   //Getter Methods
   @NonNull
@@ -152,9 +152,9 @@ public class StudentInfo {
 
   public String getPstation() { return pstation; }
 
-  public Integer getPcode() { return pcode; }
+  public String getPcode() { return pcode; }
 
-  public Integer getHouseno() { return houseno; }
+  public String getHouseno() { return houseno; }
 
-  public Integer getRoadno() { return roadno; }
+  public String getRoadno() { return roadno; }
 }

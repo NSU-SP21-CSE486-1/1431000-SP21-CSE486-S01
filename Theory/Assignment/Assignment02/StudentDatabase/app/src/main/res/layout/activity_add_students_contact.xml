@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".uicontroller.AddStudentContactActivity">
+    tools:context=".uicontroller.*">
 
     <Button
-        android:id="@+id/save_button2"
+        android:id="@+id/save_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/presentA_label" />
 
     <EditText
-        android:id="@+id/presentcountry2"
+        android:id="@+id/presentcountry"
         android:layout_width="216dp"
         android:layout_height="30dp"
         android:ellipsize="none"
@@ -71,7 +71,8 @@
         android:text="Enter country"
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="130dp" />
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/country_label2"
@@ -222,15 +223,15 @@
         android:layout_height="30dp"
         android:ellipsize="none"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|text"
         android:text="Enter Road No."
         android:textSize="9sp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="306dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="306dp" />
 
     <EditText
-        android:id="@+id/presenthouseno2"
+        android:id="@+id/presenthouseno"
         android:layout_width="216dp"
         android:layout_height="30dp"
         android:ellipsize="none"
@@ -256,7 +257,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/presentpo2"
+        android:id="@+id/presentpo"
         android:layout_width="216dp"
         android:layout_height="30dp"
         android:ellipsize="none"
@@ -269,7 +270,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/presentdistrict2"
+        android:id="@+id/presentdistrict"
         android:layout_width="216dp"
         android:layout_height="30dp"
         android:ellipsize="none"
@@ -278,7 +279,8 @@
         android:text="Enter District"
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="159dp" />
+        tools:layout_editor_absoluteY="159dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

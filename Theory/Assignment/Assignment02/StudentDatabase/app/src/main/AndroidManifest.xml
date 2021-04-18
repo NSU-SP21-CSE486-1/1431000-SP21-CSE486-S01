@@ -10,36 +10,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomDBV05">
-        <activity
-            android:name="com.shawonarefin.android.roomdbv05.uicontroller.DisplayStudentIDsActivity">
+        <activity android:name=".uicontroller.SearchActivity"></activity>
+        <activity android:name=".uicontroller.DisplayStudentIDsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.shawonarefin.android.roomdbv05.uicontroller.AddStudentActivity"
+            android:name=".uicontroller.AddStudentActivity"
             android:label="@string/title_add_new_student"
-            android:parentActivityName="com.shawonarefin.android.roomdbv05.uicontroller.DisplayStudentIDsActivity">
+            android:parentActivityName=".uicontroller.DisplayStudentIDsActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.shawonarefin.android.roomdbv05.uicontroller.DisplayStudentIDsActivity" />
         </activity>
-
-
-////Implementing the Child Class and Parent Classes
-
-        <activity android:name=".uicontroller.AddStudentPersonalinfoActivity"
+        <activity
+            android:name=".uicontroller.AddStudentPersonalinfoActivity"
             android:parentActivityName=".uicontroller.AddStudentActivity" />
-        <activity android:name=".uicontroller.AddStudentContactActivity"
-            android:parentActivityName=".uicontroller.AddStudentPersonalinfoActivity"/>
-
-
-        <activity android:name="com.shawonarefin.android.roomdbv05.uicontroller.EditStudentInfoActivity"
+        <activity
+            android:name=".uicontroller.AddStudentContactActivity"
+            android:parentActivityName=".uicontroller.AddStudentPersonalinfoActivity" />
+        <activity
+            android:name=".uicontroller.EditStudentInfoActivity"
             android:label="@string/edit_student_info_title"
-            android:parentActivityName="com.shawonarefin.android.roomdbv05.uicontroller.DisplayStudentIDsActivity">
+            android:parentActivityName=".uicontroller.DisplayStudentIDsActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data

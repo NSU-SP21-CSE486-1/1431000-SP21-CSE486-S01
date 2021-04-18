@@ -40,9 +40,11 @@ public class AddStudentActivity extends AppCompatActivity {
     studentAgeEditText = findViewById(R.id.editTextPersonAge);
 
     saveButton = findViewById(R.id.save_button);
-    saveButton.setOnClickListener(new View.OnClickListener() {
+
+    nextButton.setOnClickListener(new View.OnClickListener() {
       @Override
-      public void onClick(View view) {
+      public void onClick(View v) {
+
         String idString = studentIDEditText.getText().toString();
         Integer id = Integer.valueOf(idString);
 
@@ -50,29 +52,40 @@ public class AddStudentActivity extends AppCompatActivity {
         String ageString = studentAgeEditText.getText().toString();
         Integer age = Integer.valueOf(ageString);
 
-        StudentInfo info = new StudentInfo(id, name, age);
-        mWordViewModel.insert(info);
 
-        studentAgeEditText.setText("");
-        studentIDEditText.setText("");
-        studentNameEditText.setText("");
+        Toast.makeText(AddStudentActivity.this, "Data Added! Next Page", Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(view.getContext(),
-            "Student ID : " + idString + " saved.",
-            Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(AddStudentActivity.this, AddStudentPersonalinfoActivity.class);
 
-        finish();
       }
     });
 
+//    saveButton.setOnClickListener(new View.OnClickListener() {
+//      @Override
+//      public void onClick(View view) {
+//        String idString = studentIDEditText.getText().toString();
+//        Integer id = Integer.valueOf(idString);
+//
+//        String name = studentNameEditText.getText().toString();
+//        String ageString = studentAgeEditText.getText().toString();
+//        Integer age = Integer.valueOf(ageString);
+//
+//        StudentInfo info = new StudentInfo(id, name, age);
+//        mWordViewModel.insert(info);
+//
+//        studentAgeEditText.setText("");
+//        studentIDEditText.setText("");
+//        studentNameEditText.setText("");
+//
+//        Toast.makeText(view.getContext(),
+//            "Student ID : " + idString + " saved.",
+//            Toast.LENGTH_LONG).show();
+//
+//        finish();
+//      }
+//    });
 
-    nextButton = findViewById(R.id.next_button);
-    nextButton.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Intent intent = new Intent(AddStudentPersonalinfoActivity.this, AddStudentActivity.class, )
-      }
-    });
+
 
     clearButton = findViewById(R.id.clear_button);
     clearButton.setOnClickListener(new View.OnClickListener() {
@@ -90,7 +103,5 @@ public class AddStudentActivity extends AppCompatActivity {
   }
 
 
-  public void nextButtonClick(View view) {
 
-  }
 }

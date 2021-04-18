@@ -18,4 +18,24 @@
         <item>School of Health and Life Sciences</item>
     </string-array>
 
+    <string-array name="department_spinner">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>ETE</item>
+        <item>CE</item>
+        <item>Economics</item>
+        <item>BBA-Finance</item>
+        <item>BBA-Marketing</item>
+        <item>BBA-Accounting</item>
+        <item>BBA-Management</item>
+        <item>Environmental Management</item>
+        <item>English</item>
+        <item>Law</item>
+        <item>BioChemistry</item>
+        <item>Pharmacy</item>
+        <item>Mathematics</item>
+        <item>Physics</item>
+        <item>History</item>
+    </string-array>
+
 </resources>
