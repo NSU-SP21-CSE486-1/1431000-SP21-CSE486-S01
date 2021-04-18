@@ -6,12 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".uicontroller.EditStudentInfoActivity">
 
+    <EditText
+        android:id="@+id/page3_school_editText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <EditText
+        android:id="@+id/page3_department_editText"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <EditText
+        android:id="@+id/page3_dob_editText"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <EditText
+        android:id="@+id/page3_phone_editText"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="271dp" />
+
     <TextView
         android:id="@+id/page3_studentID_label_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
         android:text="@string/id_label_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,10 +71,11 @@
         android:id="@+id/page3_studentNameLabel_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:text="@string/name_label_text"
-        app:layout_constraintStart_toStartOf="@+id/page3_studentID_label_textView"
-        app:layout_constraintTop_toBottomOf="@+id/page3_studentID_label_textView" />
+        app:layout_constraintTop_toBottomOf="@+id/page3_studentID_label_textView"
+        tools:layout_editor_absoluteX="12dp"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/main_activity_guideline"
@@ -45,34 +86,15 @@
 
     <EditText
         android:id="@+id/page3_name_editText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/page3_studentNameLabel_textView"
-        app:layout_constraintEnd_toEndOf="@+id/page3_studentID_display_textView"
-        app:layout_constraintStart_toStartOf="@+id/page3_studentID_display_textView" />
-
-    <TextView
-        android:id="@+id/page3_studentAge_textView"
-        android:layout_width="35dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/age_label_text"
-        app:layout_constraintStart_toStartOf="@+id/page3_studentNameLabel_textView"
-        app:layout_constraintTop_toBottomOf="@+id/page3_studentNameLabel_textView" />
-
-    <EditText
-        android:id="@+id/page3_studentAge_editText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/page3_studentAge_textView"
-        app:layout_constraintEnd_toEndOf="@+id/page3_name_editText"
-        app:layout_constraintStart_toStartOf="@+id/page3_name_editText" />
+        app:layout_constraintTop_toBottomOf="@+id/page3_studentID_display_textView"
+        tools:layout_editor_absoluteX="91dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/page3_updateButton"
@@ -93,6 +115,67 @@
         app:layout_constraintBottom_toBottomOf="@+id/page3_updateButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/page3_updateButton" />
+
+    <TextView
+        android:id="@+id/page3_school_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="School:"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <TextView
+        android:id="@+id/page3_label_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOB"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:id="@+id/page3_label_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: "
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NID: "
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <EditText
+        android:id="@+id/page3_nid_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Present Address:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page3_nid_editText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

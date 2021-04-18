@@ -15,7 +15,7 @@ import androidx.room.RoomDatabase;
 @Database(entities = {StudentInfo.class}, version = 3)
 
 public abstract class AppDatabase extends RoomDatabase {
-  public abstract StudentInfoDao studentInfoDao();
+  public abstract StudentInfoDao studentInfoDao(); //Abstract method implemented by Room
 
   private static AppDatabase INSTANCE;
   private static final int NUMBER_OF_THREADS = 4;
