@@ -5,7 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".uicontroller.AddStudentActivity">
+    tools:context=".uicontroller.AddStudentContactActivity">
+
+    <Button
+        android:id="@+id/save_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/save_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/head_label"
@@ -203,7 +213,8 @@
         android:text="Enter Police Station"
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="218dp" />
+        tools:layout_editor_absoluteY="218dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/presentroadno"
@@ -215,7 +226,8 @@
         android:text="Enter Road No."
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="306dp" />
+        tools:layout_editor_absoluteY="306dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/presenthouseno2"
@@ -227,7 +239,8 @@
         android:text="Enter House No."
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="276dp" />
+        tools:layout_editor_absoluteY="276dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/presentpc"
@@ -239,7 +252,8 @@
         android:text="Enter Postal Code"
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="247dp" />
+        tools:layout_editor_absoluteY="247dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/presentpo2"
@@ -251,7 +265,8 @@
         android:text="Enter Post Office"
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="188dp" />
+        tools:layout_editor_absoluteY="188dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/presentdistrict2"
@@ -263,7 +278,8 @@
         android:text="Enter District"
         android:textSize="9sp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="159dp" />
+        tools:layout_editor_absoluteY="159dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

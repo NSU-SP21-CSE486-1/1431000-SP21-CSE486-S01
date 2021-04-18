@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".uicontroller.AddStudentActivity">
+    tools:context=".uicontroller.AddStudentPersonalinfoActivity">
 
     <TextView
         android:id="@+id/department_label"
@@ -64,7 +64,8 @@
         android:text="@string/next_button_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="267dp" />
+        tools:layout_editor_absoluteY="267dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/clear_button"

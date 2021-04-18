@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RoomDBV05</string>
+    <string name="app_name">Student Database</string>
     <string name="name_label_text">Name : </string>
     <string name="age_label_text">Age : </string>
     <string name="enter_your_name_prompt">Enter Your Name</string>
@@ -14,4 +14,13 @@
     <string name="update_button_text">Update</string>
     <string name="title_add_new_student">Add New Student</string>
     <string name="enter_contact_details">Enter Contact details</string>
+
+
+    <string-array name="school_spinner">
+        <item>School of Business & Economics</item>
+        <item>School of Engineering & Physical Sciences</item>
+        <item>School of HUmanities & Social Sciences</item>
+        <item>School of Health & Life Sciences</item>
+    </string-array>
+
 </resources>

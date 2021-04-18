@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.shawonarefin.android.roomdbv05">
 
     <application
@@ -26,6 +27,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.shawonarefin.android.roomdbv05.uicontroller.DisplayStudentIDsActivity" />
         </activity>
+
+
+////Implementing the Child Class and Parent Classes
+
+        <activity android:name=".uicontroller.AddStudentPersonalinfoActivity"
+            android:parentActivityName=".uicontroller.AddStudentActivity" />
+        <activity android:name=".uicontroller.AddStudentContactActivity"
+            android:parentActivityName=".uicontroller.AddStudentPersonalinfoActivity"/>
+        
+
         <activity android:name="com.shawonarefin.android.roomdbv05.uicontroller.EditStudentInfoActivity"
             android:label="@string/edit_student_info_title"
             android:parentActivityName="com.shawonarefin.android.roomdbv05.uicontroller.DisplayStudentIDsActivity">

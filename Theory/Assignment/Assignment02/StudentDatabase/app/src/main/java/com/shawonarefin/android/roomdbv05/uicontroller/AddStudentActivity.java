@@ -3,6 +3,8 @@ package com.shawonarefin.android.roomdbv05.uicontroller;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.ContentProviderClient;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +22,8 @@ public class AddStudentActivity extends AppCompatActivity {
   EditText studentAgeEditText;
   Button saveButton;
   Button clearButton;
+
+  Button nextButton;
 
   private StudentInfoViewModel mWordViewModel;
 
@@ -46,7 +50,7 @@ public class AddStudentActivity extends AppCompatActivity {
         String ageString = studentAgeEditText.getText().toString();
         Integer age = Integer.valueOf(ageString);
 
-        StudentInfo info = new StudentInfo(id, name, age, schoolName);
+        StudentInfo info = new StudentInfo(id, name, age);
         mWordViewModel.insert(info);
 
         studentAgeEditText.setText("");
@@ -58,6 +62,15 @@ public class AddStudentActivity extends AppCompatActivity {
             Toast.LENGTH_LONG).show();
 
         finish();
+      }
+    });
+
+
+    nextButton = findViewById(R.id.next_button);
+    nextButton.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent intent = new Intent(AddStudentPersonalinfoActivity.this, AddStudentActivity.class, )
       }
     });
 
@@ -77,4 +90,7 @@ public class AddStudentActivity extends AppCompatActivity {
   }
 
 
+  public void nextButtonClick(View view) {
+
+  }
 }
