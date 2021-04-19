@@ -37,6 +37,11 @@ public interface StudentInfoDao {
   LiveData<StudentInfo> getStudent(Integer studentID);
 
 
+//Department Query
+  @Query("SELECT department FROM student_info WHERE id = id")
+  LiveData<StudentInfo> getStudentdept(String department);
+
+
 
   @Update
   void update(StudentInfo studentInfo);

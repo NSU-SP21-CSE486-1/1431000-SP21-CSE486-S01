@@ -52,10 +52,18 @@ public class AddStudentActivity extends AppCompatActivity {
         String ageString = studentAgeEditText.getText().toString();
         Integer age = Integer.valueOf(ageString);
 
+        if(studentIDEditText.getText().toString().isEmpty() || (studentIDEditText >1111111 && studentIDEditText<9999999)){
+          Toast.makeText(AddStudentActivity.this, "Invalid Student ID. Enter Again. (Format: 7 digit)", Toast.LENGTH_LONG).show();
+          studentIDEditText.setText("");
+        }
+        else{
+          StudentInfo info = new StudentInfo(id, name, age);
+          mWordViewModel.insert(info);
+          Toast.makeText(AddStudentActivity.this, "Data Added! Next Page", Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(AddStudentActivity.this, "Data Added! Next Page", Toast.LENGTH_SHORT).show();
+          Intent intent = new Intent(AddStudentActivity.this, AddStudentPersonalinfoActivity.class);
 
-        Intent intent = new Intent(AddStudentActivity.this, AddStudentPersonalinfoActivity.class);
+        }
 
       }
     });

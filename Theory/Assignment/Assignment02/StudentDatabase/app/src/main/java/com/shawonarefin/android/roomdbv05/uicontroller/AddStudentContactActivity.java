@@ -16,7 +16,20 @@ import com.shawonarefin.android.roomdbv05.datasource.local.room.entity.StudentIn
 import com.shawonarefin.android.roomdbv05.uicontroller.AddStudentPersonalinfoActivity;
 import com.shawonarefin.android.roomdbv05.viewmodel.StudentInfoViewModel;
 
-public class AddStudentContactActivity extends AddStudentPersonalinfoActivity {
+
+
+public class AddStudentContactActivity extends AddStudentPersonalinfoActivity implements AppCompatActivity{
+
+    EditText country = findViewById(R.id.presentcountry);
+    EditText district = findViewById(R.id.presentdistrict);
+    EditText pOffice = findViewById(R.id.presentpo);
+    EditText pStation = findViewById(R.id.presentps);
+    EditText pCode = findViewById(R.id.presentpc);
+    EditText houseNo = findViewById(R.id.presenthouseno);
+    EditText roadNo = findViewById(R.id.presentroadno);
+
+
+
 
 
 

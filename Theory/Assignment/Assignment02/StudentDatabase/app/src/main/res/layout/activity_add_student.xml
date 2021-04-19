@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#43009688"
     tools:context=".uicontroller.AddStudentActivity">
 
     <TextView
@@ -113,9 +114,8 @@
         android:layout_marginTop="76dp"
         android:text="@string/clear_button_text"
         app:layout_constraintTop_toBottomOf="@+id/editTextStudentID"
-        tools:layout_editor_absoluteX="85dp"
-        tools:ignore="MissingConstraints" />
-
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="85dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

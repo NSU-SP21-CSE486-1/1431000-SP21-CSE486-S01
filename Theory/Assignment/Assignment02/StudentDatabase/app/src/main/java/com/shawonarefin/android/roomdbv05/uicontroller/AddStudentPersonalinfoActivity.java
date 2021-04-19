@@ -22,7 +22,8 @@ import com.shawonarefin.android.roomdbv05.viewmodel.StudentInfoViewModel;
 
 import java.util.Date;
 
-public class AddStudentPersonalinfoActivity extends AddStudentActivity {
+public class AddStudentPersonalinfoActivity extends AddStudentActivity implements AppCompatActivity {
+
 
     Spinner schoolSpinner, departmentSpinner;
     //DatePicker dob = findViewById(R.id.editTextDate);
@@ -32,6 +33,9 @@ public class AddStudentPersonalinfoActivity extends AddStudentActivity {
     departmentSpinner = findViewById(R.id.department_spinner)
 
     Button nextButton;
+
+
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +64,11 @@ public class AddStudentPersonalinfoActivity extends AddStudentActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                String sspinner = schoolSpinner.getSelectedItem().toString();
+
+                String dspinner = departmentSpinner.getSelectedItem().toString();
+
                 Intent intent = new Intent(AddStudentPersonalinfoActivity.this, AddStudentContactActivity.class);
                 startActivity(intent);
             }
