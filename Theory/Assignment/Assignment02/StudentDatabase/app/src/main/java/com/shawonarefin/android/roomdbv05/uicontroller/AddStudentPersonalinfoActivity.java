@@ -61,6 +61,7 @@ public class AddStudentPersonalinfoActivity extends AddStudentActivity implement
 
 
         Button nextButton = findViewById(R.id.next_button);
+
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +69,8 @@ public class AddStudentPersonalinfoActivity extends AddStudentActivity implement
                 String sspinner = schoolSpinner.getSelectedItem().toString();
 
                 String dspinner = departmentSpinner.getSelectedItem().toString();
+
+                if(nid)
 
                 Intent intent = new Intent(AddStudentPersonalinfoActivity.this, AddStudentContactActivity.class);
                 startActivity(intent);
