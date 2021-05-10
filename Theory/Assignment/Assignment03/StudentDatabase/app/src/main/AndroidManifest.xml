@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomDBV05">
-        <activity android:name=".uicontroller.FirebaseLogin"></activity>
+        <activity android:name=".uicontroller.LoginActivity"></activity>
+        <activity android:name=".uicontroller.RegisterActivity" />
         <activity android:name=".uicontroller.SearchActivity" />
         <activity android:name=".uicontroller.DisplayStudentIDsActivity">
             <intent-filter>
