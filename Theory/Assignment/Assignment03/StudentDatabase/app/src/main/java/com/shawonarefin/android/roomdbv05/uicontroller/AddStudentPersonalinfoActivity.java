@@ -70,7 +70,6 @@ public class AddStudentPersonalinfoActivity extends AddStudentActivity implement
 
                 String dspinner = departmentSpinner.getSelectedItem().toString();
 
-                if(nid)
 
                 Intent intent = new Intent(AddStudentPersonalinfoActivity.this, AddStudentContactActivity.class);
                 startActivity(intent);

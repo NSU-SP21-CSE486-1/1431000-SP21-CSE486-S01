@@ -1,5 +1,11 @@
 package com.shawonarefin.android.roomdbv05.uicontroller;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -7,12 +13,6 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.shawonarefin.android.roomdbv05.R;
@@ -59,7 +59,7 @@ public class DisplayStudentIDsActivity
       @Override
       public void onClick(View v) {
         Intent searchIntent = new Intent(DisplayStudentIDsActivity.this, SearchActivity.class);
-        Intent(searchIntent);
+
       }
     });
 

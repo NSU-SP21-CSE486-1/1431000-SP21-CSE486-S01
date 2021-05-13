@@ -1,16 +1,17 @@
 package com.shawonarefin.android.roomdbv05.uicontroller;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -20,6 +21,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.shawonarefin.android.roomdbv05.R;
 
 public class LoginActivity extends AppCompatActivity {
+
+
+    private static String LOG_TAG = "login_log"; //LOG
+
 
     private EditText email;
     private EditText password;
@@ -73,8 +78,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Update the profile " +
                             "for better expereince", Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(LoginActivity.this, )
-                    Intent intent = new Intent(LoginActivity.this , MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this , DisplayStudentIDsActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
@@ -86,6 +90,25 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.i(LOG_TAG, "Screen Rotated");
+        CharSequence writtenemail = email.getText();
+        CharSequence writtenpasssword = password.getText();
+
+        outState.putCharSequence("SavedData", writtenemail, writtenpasssword);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.i(LOG_TAG, "Screen Rotated");
+
 
     }
 }
