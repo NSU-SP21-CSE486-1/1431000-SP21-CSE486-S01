@@ -26,10 +26,9 @@ public class LoginActivity extends AppCompatActivity {
     private static String LOG_TAG = "login_log"; //LOG
 
 
-    private EditText email;
-    private EditText password;
-    private Button login;
-    private TextView registerUser;
+    EditText email, password;
+    Button login;
+    TextView registerUser;
 
     private FirebaseAuth mAuth;
 

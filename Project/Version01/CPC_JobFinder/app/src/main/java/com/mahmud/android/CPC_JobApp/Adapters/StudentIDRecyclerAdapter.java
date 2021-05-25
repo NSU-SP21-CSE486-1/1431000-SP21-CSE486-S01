@@ -1,18 +1,18 @@
-package com.mahmud.android.CPC_JobApp.uicontroller;
+package com.mahmud.android.CPC_JobApp.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.mahmud.android.CPC_JobApp.R;
 import com.mahmud.android.CPC_JobApp.datasource.local.room.entity.StudentInfo;
 
 import java.util.LinkedList;
 import java.util.List;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class StudentIDRecyclerAdapter
     extends RecyclerView.Adapter<StudentIDRecyclerAdapter.StudentIDViewHolder> {
