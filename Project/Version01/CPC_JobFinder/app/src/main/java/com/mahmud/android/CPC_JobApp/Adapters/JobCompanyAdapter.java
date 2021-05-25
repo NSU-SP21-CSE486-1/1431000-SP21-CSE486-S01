@@ -10,7 +10,8 @@ import com.mahmud.android.CPC_JobApp.viewmodel.JobInfoViewModel;
 
 import java.util.ArrayList;
 
-public class JobCompanyAdapter extends RecyclerView.Adapter<JobCompanyAdapter.viewholder> {
+public class JobCompanyAdapter extends RecyclerView.Adapter<JobCompanyAdapter.viewHolder> {
+
     ArrayList<JobInfoViewModel> list;
     Context context;
 

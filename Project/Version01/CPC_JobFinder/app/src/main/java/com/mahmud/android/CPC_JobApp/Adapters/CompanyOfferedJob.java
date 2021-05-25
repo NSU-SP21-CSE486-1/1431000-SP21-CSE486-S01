@@ -1,47 +1,28 @@
 package com.mahmud.android.CPC_JobApp.Adapters;
 
-public class CompanyOfferedJob {
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-    int offeredJobImage;
-    String offeredJobPosition, offeredJobSalary, offeredJobDescription;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 
-    public CompanyOfferedJob(int offeredJobImage, String offeredJobPosition, String offeredJobSalary, String offeredJobDescription){
-        this.offeredJobImage = offeredJobImage;
-        this.offeredJobPosition = offeredJobPosition;
-        this.offeredJobSalary = offeredJobSalary;
-        this.offeredJobDescription = offeredJobDescription;
-    }
+public class CompanyOfferedJob extends RecyclerView.Adapter<CompanyOfferedJob.viewHolder> {
 
-    public int getOfferedJobImage() {
-        return offeredJobImage;
-    }
+   ArrayList<CompanyOfferedJob> list;
+   Context context;
 
-    public void setOfferedJobImage(int offeredJobImage) {
-        this.offeredJobImage = offeredJobImage;
-    }
+   public CompanyOfferedJob(ArrayList<CompanyOfferedJob> list, Context context){
+       this.list = list;
+       this.context = context;
+   }
 
-    public String getOfferedJobPosition() {
-        return offeredJobPosition;
-    }
-
-    public void setOfferedJobPosition(String offeredJobPosition) {
-        this.offeredJobPosition = offeredJobPosition;
-    }
-
-    public String getOfferedJobSalary() {
-        return offeredJobSalary;
-    }
-
-    public void setOfferedJobSalary(String offeredJobSalary) {
-        this.offeredJobSalary = offeredJobSalary;
-    }
-
-    public String getOfferedJobDescription() {
-        return offeredJobDescription;
-    }
-
-    public void setOfferedJobDescription(String offeredJobDescription) {
-        this.offeredJobDescription = offeredJobDescription;
+    @NonNull
+    @Override
+    public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(android.R.layout.)
     }
 }
