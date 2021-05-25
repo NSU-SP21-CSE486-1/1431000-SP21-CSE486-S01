@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "310938536119",
+    "project_id": "roomdbv05",
+    "storage_bucket": "roomdbv05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310938536119:android:6132ccfa87febccde02532",
+        "android_client_info": {
+          "package_name": "com.shawonarefin.android.roomdbv05.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310938536119-49h39m6srfjgrr58bd0b18iei1n5b4m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-yjm2fM7dXA7o_2g8bO-1PdD6wv0mjYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310938536119-49h39m6srfjgrr58bd0b18iei1n5b4m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

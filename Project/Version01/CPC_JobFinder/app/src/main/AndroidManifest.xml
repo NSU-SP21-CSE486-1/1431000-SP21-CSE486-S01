@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mahmud.android.CPC_JobApp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoomDBV05">
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.Home_fragment"></activity>
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.StudentHome_Fragment" />
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.MainActivity" />
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.JobDashboard" />
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.AddJobs" />
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.LoginActivity" />
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.RegisterActivity" />
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.SearchActivity" />
+        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentActivity"
+            android:label="@string/title_add_new_student"
+            android:parentActivityName="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity" />
+        </activity>
+        <activity
+            android:name="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentPersonalinfoActivity"
+            android:parentActivityName="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentActivity" />
+        <activity
+            android:name="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentContactActivity"
+            android:parentActivityName="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentPersonalinfoActivity" />
+        <activity
+            android:name="com.mahmud.android.CPC_JobApp.uicontroller.EditStudentInfoActivity"
+            android:label="@string/edit_student_info_title"
+            android:parentActivityName="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity" />
+        </activity>
+    </application>
+
+</manifest>

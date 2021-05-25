@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_myJobs"
+            android:title="My Jobs" />
+        <item
+            android:id="@+id/nav_saved"
+            android:title="Saved" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Apply the Job" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>
