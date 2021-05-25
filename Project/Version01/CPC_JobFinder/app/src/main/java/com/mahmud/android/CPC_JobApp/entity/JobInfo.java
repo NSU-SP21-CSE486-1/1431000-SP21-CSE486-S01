@@ -1,4 +1,4 @@
-package com.mahmud.android.CPC_JobApp.datasource.local.room.entity;
+package com.mahmud.android.CPC_JobApp.entity;
 
 public class JobInfo {
     String addPosition, addSalary, jobCategory, addDetail;

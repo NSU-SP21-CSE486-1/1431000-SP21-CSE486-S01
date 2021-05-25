@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.mahmud.android.CPC_JobApp.datasource.local.room.entity.JobInfo;
+import com.mahmud.android.CPC_JobApp.entity.JobInfo;
 
 import java.util.List;
 

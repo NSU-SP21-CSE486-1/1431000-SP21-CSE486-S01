@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mahmud.android.CPC_JobApp.viewmodel.JobInfoViewModel;
+import com.mahmud.android.CPC_JobApp.entity.JobInfoViewModel;
 
 import java.util.ArrayList;
 

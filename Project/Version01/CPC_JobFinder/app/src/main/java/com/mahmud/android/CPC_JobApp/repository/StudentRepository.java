@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.mahmud.android.CPC_JobApp.datasource.local.room.dao.StudentInfoDao;
 import com.mahmud.android.CPC_JobApp.datasource.local.room.database.AppDatabase;
-import com.mahmud.android.CPC_JobApp.datasource.local.room.entity.StudentInfo;
+import com.mahmud.android.CPC_JobApp.entity.StudentInfo;
 
 import java.util.List;
 

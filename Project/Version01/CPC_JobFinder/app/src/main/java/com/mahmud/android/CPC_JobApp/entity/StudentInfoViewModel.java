@@ -1,4 +1,4 @@
-package com.mahmud.android.CPC_JobApp.viewmodel;
+package com.mahmud.android.CPC_JobApp.entity;
 
 import android.app.Application;
 
@@ -6,7 +6,6 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.mahmud.android.CPC_JobApp.datasource.local.room.entity.StudentInfo;
 import com.mahmud.android.CPC_JobApp.repository.StudentRepository;
 
 import java.util.List;

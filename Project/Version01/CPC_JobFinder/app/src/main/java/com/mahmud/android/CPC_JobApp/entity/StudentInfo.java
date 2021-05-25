@@ -1,4 +1,4 @@
-package com.mahmud.android.CPC_JobApp.datasource.local.room.entity;
+package com.mahmud.android.CPC_JobApp.entity;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;

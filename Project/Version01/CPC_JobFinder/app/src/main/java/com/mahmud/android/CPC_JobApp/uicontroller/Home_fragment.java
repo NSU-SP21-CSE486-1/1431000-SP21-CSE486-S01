@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mahmud.android.CPC_JobApp.Adapters.MainAdapter;
-import com.mahmud.android.CPC_JobApp.viewmodel.MainModel;
+import com.mahmud.android.CPC_JobApp.entity.MainModel;
 
 import java.util.ArrayList;
 

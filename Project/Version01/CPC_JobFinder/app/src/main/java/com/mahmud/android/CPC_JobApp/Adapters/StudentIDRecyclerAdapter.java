@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mahmud.android.CPC_JobApp.R;
-import com.mahmud.android.CPC_JobApp.datasource.local.room.entity.StudentInfo;
+import com.mahmud.android.CPC_JobApp.entity.StudentInfo;
 
 import java.util.LinkedList;
 import java.util.List;

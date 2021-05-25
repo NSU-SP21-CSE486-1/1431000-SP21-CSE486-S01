@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mahmud.android.CPC_JobApp.viewmodel.MainModel;
+import com.mahmud.android.CPC_JobApp.entity.MainModel;
 
 import java.util.ArrayList;
 

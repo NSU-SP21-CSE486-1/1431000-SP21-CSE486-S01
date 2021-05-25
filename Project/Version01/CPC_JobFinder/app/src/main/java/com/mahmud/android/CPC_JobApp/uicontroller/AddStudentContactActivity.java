@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.mahmud.android.CPC_JobApp.R;
-import com.mahmud.android.CPC_JobApp.viewmodel.StudentInfoViewModel;
+import com.mahmud.android.CPC_JobApp.entity.StudentInfoViewModel;
 
 
 

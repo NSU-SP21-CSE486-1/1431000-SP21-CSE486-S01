@@ -1,4 +1,4 @@
-package com.mahmud.android.CPC_JobApp.viewmodel;
+package com.mahmud.android.CPC_JobApp.entity;
 
 public class JobApplyModel {
 

@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.mahmud.android.CPC_JobApp.Adapters.JobItemAdapter;
 import com.mahmud.android.CPC_JobApp.R;
-import com.mahmud.android.CPC_JobApp.datasource.local.room.entity.JobInfo;
+import com.mahmud.android.CPC_JobApp.entity.JobInfo;
 
 import java.util.List;
 

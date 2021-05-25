@@ -11,17 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mahmud.android.CPC_JobApp.R;
-import com.mahmud.android.CPC_JobApp.viewmodel.JobInfoViewModel;
+import com.mahmud.android.CPC_JobApp.entity.JobInfoViewModel;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class CompanyOfferedJob extends RecyclerView.Adapter<CompanyOfferedJob.viewHolder> {
+public class CompanyOfferedJobAdapter extends RecyclerView.Adapter<CompanyOfferedJobAdapter.viewholder> {
 
-   ArrayList<CompanyOfferedJob> list;
+   ArrayList<CompanyOfferedJobAdapter> list;
    Context context;
 
-   public CompanyOfferedJob(ArrayList<CompanyOfferedJob> list, Context context){
+   public CompanyOfferedJobAdapter(ArrayList<CompanyOfferedJobAdapter> list, Context context){
        this.list = list;
        this.context = context;
    }
@@ -36,6 +35,8 @@ public class CompanyOfferedJob extends RecyclerView.Adapter<CompanyOfferedJob.vi
     @Override
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
         final JobInfoViewModel model = list.get(position);
+        holder.offJobImage.setImageResource(model.getOfferedJobImage());
+        holder.offPositionName.setText(model.getofferedFoodName());
 
 
 

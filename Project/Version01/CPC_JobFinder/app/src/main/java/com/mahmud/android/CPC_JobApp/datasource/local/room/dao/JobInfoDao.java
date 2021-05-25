@@ -8,8 +8,8 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.mahmud.android.CPC_JobApp.datasource.local.room.entity.JobInfo;
-import com.mahmud.android.CPC_JobApp.datasource.local.room.entity.StudentInfo;
+import com.mahmud.android.CPC_JobApp.entity.JobInfo;
+import com.mahmud.android.CPC_JobApp.entity.StudentInfo;
 
 import java.util.List;
 
