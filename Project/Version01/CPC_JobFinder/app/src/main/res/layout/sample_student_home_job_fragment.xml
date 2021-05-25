@@ -22,7 +22,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/chef_food_image"
+                android:id="@+id/job_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginLeft="12dp"
-                android:text="Comapny  Name"
+                android:text="Comapny Name"
                 android:textColor="@color/Blue"
                 android:textSize="24sp"
                 android:textStyle="bold" />

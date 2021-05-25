@@ -28,7 +28,7 @@ public interface JobInfoDao {
   @Insert(onConflict = OnConflictStrategy.IGNORE)
   void insertAll(JobInfo... jobInfos);
 
-  @Query("SELECT id FROM student_info ORDER BY id ASC")
+  @Query("SELECT id FROM job_info ORDER BY id ASC")
   LiveData<List<Integer>> getAllIds();
 
   @Query("SELECT * FROM student_info ORDER BY id ASC")

@@ -6,19 +6,20 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="CPC_jobApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomDBV05">
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.Home_fragment"></activity>
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.StudentHome_Fragment" />
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.MainActivity" />
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.JobDashboard" />
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.AddJobs" />
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.LoginActivity" />
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.RegisterActivity" />
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.SearchActivity" />
-        <activity android:name="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity">
+        <activity android:name=".uicontroller.Start"></activity>
+        <activity android:name=".uicontroller.Home_fragment" />
+        <activity android:name=".uicontroller.StudentHome_Fragment" />
+        <activity android:name=".uicontroller.MainActivity" />
+        <activity android:name=".uicontroller.JobDashboard" />
+        <activity android:name=".uicontroller.AddJobs" />
+        <activity android:name=".uicontroller.LoginActivity" />
+        <activity android:name=".uicontroller.RegisterActivity" />
+        <activity android:name=".uicontroller.SearchActivity" />
+        <activity android:name=".uicontroller.DisplayStudentIDsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,9 +27,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentActivity"
+            android:name=".uicontroller.AddStudentActivity"
             android:label="@string/title_add_new_student"
-            android:parentActivityName="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity">
+            android:parentActivityName=".uicontroller.DisplayStudentIDsActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -36,15 +37,15 @@
                 android:value="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity" />
         </activity>
         <activity
-            android:name="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentPersonalinfoActivity"
-            android:parentActivityName="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentActivity" />
+            android:name=".uicontroller.AddStudentPersonalinfoActivity"
+            android:parentActivityName=".uicontroller.AddStudentActivity" />
         <activity
-            android:name="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentContactActivity"
-            android:parentActivityName="com.mahmud.android.CPC_JobApp.uicontroller.AddStudentPersonalinfoActivity" />
+            android:name=".uicontroller.AddStudentContactActivity"
+            android:parentActivityName=".uicontroller.AddStudentPersonalinfoActivity" />
         <activity
-            android:name="com.mahmud.android.CPC_JobApp.uicontroller.EditStudentInfoActivity"
+            android:name=".uicontroller.EditStudentInfoActivity"
             android:label="@string/edit_student_info_title"
-            android:parentActivityName="com.mahmud.android.CPC_JobApp.uicontroller.DisplayStudentIDsActivity">
+            android:parentActivityName=".uicontroller.DisplayStudentIDsActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data

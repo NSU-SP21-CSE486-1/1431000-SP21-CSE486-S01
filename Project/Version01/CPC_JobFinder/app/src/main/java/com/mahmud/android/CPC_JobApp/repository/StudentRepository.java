@@ -2,13 +2,13 @@ package com.mahmud.android.CPC_JobApp.repository;
 
 import android.app.Application;
 
+import androidx.lifecycle.LiveData;
+
 import com.mahmud.android.CPC_JobApp.datasource.local.room.dao.StudentInfoDao;
 import com.mahmud.android.CPC_JobApp.datasource.local.room.database.AppDatabase;
 import com.mahmud.android.CPC_JobApp.entity.StudentInfo;
 
 import java.util.List;
-
-import androidx.lifecycle.LiveData;
 
 public class StudentRepository {
   private StudentInfoDao mStudentInfoDao;
