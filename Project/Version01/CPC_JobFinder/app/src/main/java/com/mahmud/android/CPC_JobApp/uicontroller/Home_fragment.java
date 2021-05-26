@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mahmud.android.CPC_JobApp.Adapters.MainAdapter;
+import com.mahmud.android.CPC_JobApp.R;
 import com.mahmud.android.CPC_JobApp.entity.MainModel;
 
 import java.util.ArrayList;
@@ -23,14 +24,14 @@ public class Home_fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.home_fragment, container,false);
+        View view = inflater.inflate(R.layout.activity_home_fragment, container,false);
         recyclerView = view.findViewById(R.id.customerchefHomeFrag);
 
         ArrayList<MainModel> list = new ArrayList<>();
-        list.add(new MainModel(R.drawable.fried_rice, "William John", "Food heaven right here"));
-        list.add(new MainModel(R.drawable.shrimp_salad, "Food Heaven",  "with magic white sauce and fries as free side dishes!"));
-        list.add(new MainModel(R.drawable.kacchi_biryani, "Shimla Mirch",  "Get lost with flavors!"));
-        list.add(new MainModel(R.drawable.noodles, "Food Bursts", "Can't think of any more bio!"));
+        list.add(new MainModel(R.drawable.UXDesigner, "GrameenPhone", "UX Designer needed"));
+        list.add(new MainModel(R.drawable.DataAnalyst, "Airtel",  "Looking for a Data Analyst"));
+        list.add(new MainModel(R.drawable.softwareengineer, "Telco Co.",  "Needed a backend Software Engineer"));
+        list.add(new MainModel(R.drawable.UXDesigner, "Soft Co.", "Need a creative UX/UI designer"));
 
         MainAdapter adapter = new MainAdapter(list, getContext());
         recyclerView.setAdapter(adapter);

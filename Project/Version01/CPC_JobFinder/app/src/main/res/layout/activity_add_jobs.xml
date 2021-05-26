@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp">
-    //tools:context=".AddFoodItemsFrag"
+    android:padding="20dp"
+    tools:context=".uicontroller.AddJobs">
 
 
 
@@ -59,9 +59,8 @@
         android:layout_height="50dp"
         android:layout_below="@id/SalaryRange"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"/>
-    //android:src="@drawable/ic_baseline_image_24"
-    />
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_baseline"/>
 
 
     <Button

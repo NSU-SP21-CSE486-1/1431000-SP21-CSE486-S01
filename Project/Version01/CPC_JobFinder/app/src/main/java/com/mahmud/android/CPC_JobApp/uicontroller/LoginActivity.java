@@ -13,6 +13,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -45,6 +47,9 @@ public class LoginActivity extends AppCompatActivity {
         registerUser = findViewById(R.id.register_user);
 
         mAuth = FirebaseAuth.getInstance();
+
+        String em = email.getEditText().getText().toString().trim();
+        String pwd = password.getEditText().getText().toString().trim();
 
         registerUser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,6 +96,44 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+
+    //Checking if the email address is from NSU domain email
+    String emailPattern = "[a-zA-Z._+@northsouth.edu]";
+    public boolean isValid() {
+        email.setErrorEnabled(false);
+        email.setError("");
+        pass.setErrorEnabled(false);
+        pass.setError("");
+
+        boolean isvalidemail=false,isvalidpassword=false,isvalid=false;
+        if (TextUtils.isEmpty(em))
+        {
+            email.setErrorEnabled(true);
+            email.setError("Email is required");
+        }
+        else {
+            if (em.matches(emailPattern))
+            {
+                isvalidemail=true;
+            }
+            else {
+                email.setErrorEnabled(true);
+                email.setError("Enter a valid Email Address");
+            }
+
+        }
+        if (TextUtils.isEmpty(pwd))
+        {
+            pass.setErrorEnabled(true);
+            pass.setError("Password is required");
+        }
+        else {
+            isvalidpassword=true;
+        }
+        isvalid = (isvalidemail && isvalidpassword) ? true : false;
+        return isvalid;
+    }
+
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
