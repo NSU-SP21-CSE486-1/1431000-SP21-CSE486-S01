@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomDBV05">
+
         <activity android:name=".uicontroller.Start_Splash"></activity>
         <activity android:name=".uicontroller.Home_fragment" />
         <activity android:name=".uicontroller.StudentHome_Fragment" />

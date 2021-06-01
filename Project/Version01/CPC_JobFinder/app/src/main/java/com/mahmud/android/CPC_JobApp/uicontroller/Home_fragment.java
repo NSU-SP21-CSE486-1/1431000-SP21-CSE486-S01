@@ -28,10 +28,10 @@ public class Home_fragment extends Fragment {
         recyclerView = view.findViewById(R.id.customerchefHomeFrag);
 
         ArrayList<MainModel> list = new ArrayList<>();
-        list.add(new MainModel(R.drawable.UXDesigner, "GrameenPhone", "UX Designer needed"));
-        list.add(new MainModel(R.drawable.DataAnalyst, "Airtel",  "Looking for a Data Analyst"));
+        list.add(new MainModel(R.drawable.uxdesigner, "GrameenPhone", "UX Designer needed"));
+        list.add(new MainModel(R.drawable.dataanalyst, "Airtel",  "Looking for a Data Analyst"));
         list.add(new MainModel(R.drawable.softwareengineer, "Telco Co.",  "Needed a backend Software Engineer"));
-        list.add(new MainModel(R.drawable.UXDesigner, "Soft Co.", "Need a creative UX/UI designer"));
+        list.add(new MainModel(R.drawable.uxdesigner, "Soft Co.", "Need a creative UX/UI designer"));
 
         MainAdapter adapter = new MainAdapter(list, getContext());
         recyclerView.setAdapter(adapter);

@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "310938536119",
-    "project_id": "roomdbv05",
-    "storage_bucket": "roomdbv05.appspot.com"
+    "project_number": "736231699753",
+    "project_id": "cpcjobapp-53d71",
+    "storage_bucket": "cpcjobapp-53d71.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:310938536119:android:6132ccfa87febccde02532",
+        "mobilesdk_app_id": "1:736231699753:android:ed9501d6dba62a30eeb338",
         "android_client_info": {
-          "package_name": "com.shawonarefin.android.roomdbv05.debug"
+          "package_name": "com.mahmud.android.CPC_JobApp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "310938536119-49h39m6srfjgrr58bd0b18iei1n5b4m7.apps.googleusercontent.com",
+          "client_id": "736231699753-2dptgrgr3ocfitlc8pcq9kvj4mbbp11b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mahmud.android.CPC_JobApp",
+            "certificate_hash": "ab1a41879655753b71dd778b399bb0ef9a55d853"
+          }
+        },
+        {
+          "client_id": "736231699753-tddeadj75mv3c0942nf8b4q8ngm0o8l9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD-yjm2fM7dXA7o_2g8bO-1PdD6wv0mjYU"
+          "current_key": "AIzaSyAmRSdFkwcLnKmNoqbkmI_YLYKHtA2ILTU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "310938536119-49h39m6srfjgrr58bd0b18iei1n5b4m7.apps.googleusercontent.com",
+              "client_id": "736231699753-tddeadj75mv3c0942nf8b4q8ngm0o8l9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
