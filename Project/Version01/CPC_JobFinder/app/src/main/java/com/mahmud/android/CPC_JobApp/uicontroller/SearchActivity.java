@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.mahmud.android.CPC_JobApp.R;
+
 public class SearchActivity extends AppCompatActivity {
 
     @Override
