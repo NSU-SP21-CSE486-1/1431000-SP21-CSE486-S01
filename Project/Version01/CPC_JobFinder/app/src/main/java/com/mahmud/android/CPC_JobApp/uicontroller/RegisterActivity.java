@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,99 +30,73 @@ import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private EditText username;
+
     private EditText name;
     private EditText email;
     private EditText password;
     private Button register;
     private TextView loginUser;
 
-    private DatabaseReference mRootRef;
+    //Firebase
     private FirebaseAuth mAuth;
-
-    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-        username = findViewById(R.id.username);
-        name = findViewById(R.id.name);
-        email = findViewById(R.id.email);
-        password = findViewById(R.id.password);
-        register = findViewById(R.id.register);
-        loginUser = findViewById(R.id.login_user);
-
-        mRootRef = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
-        pd = new ProgressDialog(this);
 
-        loginUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this , LoginActivity.class));
-            }
-        });
+        Registration();
+
+
+
+    }
+
+    private void Registration() {
+        name = findViewById(R.id.name_registration);
+        email = findViewById(R.id.email_registration);
+        password = findViewById(R.id.password_registration);
+
+        register = findViewById(R.id.register_button);
+        loginUser = findViewById(R.id.login_user);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String txtUsername = username.getText().toString();
-                String txtName = name.getText().toString();
-                String txtEmail = email.getText().toString();
-                String txtPassword = password.getText().toString();
 
-                if (TextUtils.isEmpty(txtUsername) || TextUtils.isEmpty(txtName)
-                        || TextUtils.isEmpty(txtEmail) || TextUtils.isEmpty(txtPassword)){
-                    Toast.makeText(RegisterActivity.this, "Empty credentials!", Toast.LENGTH_SHORT).show();
-                } else if (txtPassword.length() < 6){
-                    Toast.makeText(RegisterActivity.this, "Password too short!", Toast.LENGTH_SHORT).show();
-                } else {
-                    registerUser(txtUsername , txtName , txtEmail , txtPassword);
+                String em = email.getText().toString().trim();
+                String pass = password.getText().toString().trim();
+
+                if(TextUtils.isEmpty(em)){
+                    email.setError("Required Field");
+                    return;
                 }
-            }
-        });
-    }
-
-    private void registerUser(final String username, final String name, final String email, String password) {
-
-        pd.setMessage("Please Wail!");
-        pd.show();
-
-        mAuth.createUserWithEmailAndPassword(email , password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-            @Override
-            public void onSuccess(AuthResult authResult) {
-
-                HashMap<String , Object> map = new HashMap<>();
-                map.put("name" , name);
-                map.put("email", email);
-                map.put("username" , username);
-                map.put("id" , mAuth.getCurrentUser().getUid());
-                map.put("bio" , "");
-                map.put("imageurl" , "default");
-
-                mRootRef.child("Users").child(mAuth.getCurrentUser().getUid()).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                if(TextUtils.isEmpty(pass)){
+                    password.setError("Required Field");
+                    return;
+                }
+                mAuth.createUserWithEmailAndPassword(em, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()){
-                            pd.dismiss();
-                            Toast.makeText(RegisterActivity.this, "Update the profile " +
-                                    "for better expereince", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(RegisterActivity.this , MainActivity.class);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            startActivity(intent);
-                            finish();
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+
+                        if(task.isSuccessful()){
+                            Toast.makeText(getApplicationContext(), "Successful Registration", Toast.LENGTH_SHORT).show();
+
+                            startActivity(new Intent(getApplicationContext()), Home_fragment.class);
                         }
+
                     }
                 });
 
+
             }
-        }).addOnFailureListener(new OnFailureListener() {
+        });
+
+        loginUser.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onFailure(@NonNull Exception e) {
-                pd.dismiss();
-                Toast.makeText(RegisterActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+
             }
         });
 
