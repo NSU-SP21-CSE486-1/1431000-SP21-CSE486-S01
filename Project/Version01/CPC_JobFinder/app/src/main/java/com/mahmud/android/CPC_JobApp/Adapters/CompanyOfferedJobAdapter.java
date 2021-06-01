@@ -40,7 +40,7 @@ public class CompanyOfferedJobAdapter extends RecyclerView.Adapter<CompanyOffere
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
         final JobInfoViewModel model = list.get(position);
         holder.offJobImage.setImageResource(model.getOfferedJobImage());
-        holder.offPositionName.setText(model.getOffe);
+        holder.offPositionName.setText();
 
 
 
