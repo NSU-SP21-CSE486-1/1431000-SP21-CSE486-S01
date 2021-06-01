@@ -56,7 +56,7 @@ public class AddJobs extends Fragment {
                             jobtype.getText().toString(),
                             salary.getText().toString());
                     JobInfoList.set(bundle.getInt("position"), JobInfo);
-                    jobItemAdapter
+
 
                 }
             });

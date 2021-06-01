@@ -35,6 +35,6 @@ public class AddStudentContactActivity extends AddStudentPersonalinfoActivity im
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_students_contact);
 
-        mWordViewModel = (new ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(this.getApplication()))).get(Student)
+
     }
 }

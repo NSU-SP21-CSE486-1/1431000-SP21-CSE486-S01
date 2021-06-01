@@ -6,18 +6,20 @@ import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mahmud.android.CPC_JobApp.R;
 import com.mahmud.android.CPC_JobApp.entity.JobInfoViewModel;
 
 import java.util.ArrayList;
 
-public class JobCompanyAdapter extends RecyclerView.Adapter<JobCompanyAdapter.viewHolder> {
+public class JobCompanyAdapter extends RecyclerView.Adapter<JobCompanyAdapter.viewholder> {
 
     ArrayList<JobInfoViewModel> list;
     Context context;
 
     public JobCompanyAdapter(ArrayList<JobInfoViewModel> list, Context context){
 
-        View view = LayoutInflater.from(context).inflate(android.R.layout.)
+
     }
+
 
 }

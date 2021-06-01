@@ -46,10 +46,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
 
-        if (savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container),
-                new Home_Fragment()).comm
-        }
+
 
     }
 }

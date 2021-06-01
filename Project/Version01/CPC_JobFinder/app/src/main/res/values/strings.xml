@@ -15,6 +15,9 @@
     <string name="title_add_new_student">Add New Student</string>
     <string name="enter_contact_details">Enter Contact details</string>
     <string name="submit">submit</string>
+    <string name="salary">salary</string>
+    <string name="Job_Description">job_description</string>
+    <string name="Apply_job">apply_job</string>
 
 
     <string-array name="school_spinner">

@@ -2,6 +2,7 @@ package com.mahmud.android.CPC_JobApp.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -9,6 +10,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.mahmud.android.CPC_JobApp.entity.CompanyOfferedJobModel;
+import androidx.fragment.app.Fragment;
 
 import com.mahmud.android.CPC_JobApp.R;
 import com.mahmud.android.CPC_JobApp.entity.JobInfoViewModel;
@@ -36,7 +40,7 @@ public class CompanyOfferedJobAdapter extends RecyclerView.Adapter<CompanyOffere
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
         final JobInfoViewModel model = list.get(position);
         holder.offJobImage.setImageResource(model.getOfferedJobImage());
-        holder.offPositionName.setText(model.getofferedFoodName());
+        holder.offPositionName.setText(model.getOffe);
 
 
 
