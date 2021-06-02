@@ -18,14 +18,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.mahmud.android.CPC_JobApp.Adapters.JobItemAdapter;
 import com.mahmud.android.CPC_JobApp.R;
-import com.mahmud.android.CPC_JobApp.entity.JobInfo;
+import com.mahmud.android.CPC_JobApp.entity.JobInfoModel;
 
 import java.util.List;
 
 public class JobDashboard extends Fragment {
 
     Button addJobButton;
-    private List<JobInfo> JobInfoList;
+    private List<JobInfoModel> jobInfoModelList;
     RecyclerView recyclerView;
     JobItemAdapter jobItemAdapter;
 
@@ -33,9 +33,9 @@ public class JobDashboard extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        JobInfoList = PrefConfig.readListFromPref(getContext());
-        JobItemAdapter = new JobItemAdapter(JobInfoList, getContext());
-        JobItemAdapter.setTaskModelList(JobInfoList);
+        jobInfoModelList = PrefConfig.readListFromPref(getContext());
+        JobItemAdapter = new JobItemAdapter(jobInfoModelList, getContext());
+        JobItemAdapter.setTaskModelList(jobInfoModelList);
     }
 
     @Nullable

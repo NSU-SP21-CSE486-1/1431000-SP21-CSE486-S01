@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.mahmud.android.CPC_JobApp.entity.JobInfo;
+import com.mahmud.android.CPC_JobApp.entity.JobInfoModel;
 
 import java.util.List;
 
@@ -16,16 +16,16 @@ public class AddJobs extends Fragment {
     EditText positionname, jobdetail, jobtype, salary;
     Button submitButton, updateButton;
 
-  private List<JobInfo> JobInfoList;
+  private List<JobInfoModel> jobInfoModelList;
   JobItemAdapter jobItemAdapter;
-  JobInfo jobInfo;
+  JobInfoModel jobInfoModel;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        jobItemAdapter = new jobItemAdapter(JobInfoList, getContext());
-        jobItemAdapter.setTaskModelList(JobInfoList);
-        JobInfoList = PrefConfig.readListFromPref(getContext());
+        jobItemAdapter = new jobItemAdapter(jobInfoModelList, getContext());
+        jobItemAdapter.setTaskModelList(jobInfoModelList);
+        jobInfoModelList = PrefConfig.readListFromPref(getContext());
 
     }
 
@@ -51,11 +51,11 @@ public class AddJobs extends Fragment {
             updateButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    JobInfo = new JobInfo(positionname.getText().toString(),
+                    JobInfoModel = new JobInfoModel(positionname.getText().toString(),
                             jobdetail.getText().toString(),
                             jobtype.getText().toString(),
                             salary.getText().toString());
-                    JobInfoList.set(bundle.getInt("position"), JobInfo);
+                    jobInfoModelList.set(bundle.getInt("position"), JobInfoModel);
 
 
                 }

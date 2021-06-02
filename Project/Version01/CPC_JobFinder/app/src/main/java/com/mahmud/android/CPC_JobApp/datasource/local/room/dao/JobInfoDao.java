@@ -8,7 +8,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.mahmud.android.CPC_JobApp.entity.JobInfo;
+import com.mahmud.android.CPC_JobApp.entity.JobInfoModel;
 import com.mahmud.android.CPC_JobApp.entity.StudentInfo;
 
 import java.util.List;
@@ -23,10 +23,10 @@ import java.util.List;
 @Dao
 public interface JobInfoDao {
   @Insert(onConflict = OnConflictStrategy.IGNORE)
-  void insert(JobInfo JobInfo);
+  void insert(JobInfoModel JobInfoModel);
 
   @Insert(onConflict = OnConflictStrategy.IGNORE)
-  void insertAll(JobInfo... jobInfos);
+  void insertAll(JobInfoModel... jobInfoModels);
 
   @Query("SELECT id FROM job_info ORDER BY id ASC")
   LiveData<List<Integer>> getAllIds();

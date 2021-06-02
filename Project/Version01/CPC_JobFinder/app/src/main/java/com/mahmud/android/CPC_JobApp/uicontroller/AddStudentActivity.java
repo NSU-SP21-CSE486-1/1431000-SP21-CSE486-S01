@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import com.mahmud.android.CPC_JobApp.R;
 import com.mahmud.android.CPC_JobApp.entity.StudentInfo;
-import com.mahmud.android.CPC_JobApp.entity.StudentInfoViewModel;
 
 public class AddStudentActivity extends AppCompatActivity {
 
