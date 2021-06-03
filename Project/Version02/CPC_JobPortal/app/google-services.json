@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "166607169264",
+    "project_id": "cpcfirebase",
+    "storage_bucket": "cpcfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166607169264:android:cdcd6642b5fc78c0708435",
+        "android_client_info": {
+          "package_name": "com.mahmud.cpc_jobportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166607169264-mnov73mlep08ek4lsa67d026ij1p87k8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mahmud.cpc_jobportal",
+            "certificate_hash": "0336663d66b7b73736d09ad402f60eecea193984"
+          }
+        },
+        {
+          "client_id": "166607169264-f41e1fk8dc8hf212gd66eqnajbvp5rhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyLeKrNJhx5gh70ClC17l1Kyc5cwFeu8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166607169264-f41e1fk8dc8hf212gd66eqnajbvp5rhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
