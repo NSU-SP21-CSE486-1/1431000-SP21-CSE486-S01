@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CPC_JobPortal">
-        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".PostJobActivity"></activity>
+        <activity android:name=".AvailableJobsActivity" />
+        <activity android:name=".DashboardActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>

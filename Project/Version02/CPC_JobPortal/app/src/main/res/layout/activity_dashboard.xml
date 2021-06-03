@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#BABABA"
     tools:context=".DashboardActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:text="Choose your option:"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <Button
+        android:id="@+id/button_postjob"
+        android:layout_width="93dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_color2"
+        android:text="Post Jobs"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_alljobs"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_alljobs"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_color"
+        android:text="Available Jobs"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="336dp" />
+
+
+</LinearLayout>
