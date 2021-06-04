@@ -9,9 +9,6 @@ When you graduated and looking for job to stay alive in this world. Then you mig
 This app was based on the Model-View-ViewModel(MVVM) layout. 
 In this project the Models are stored on the entity class folder. The View are stored in the UIController and the layout file of the project. The ViewModel is in the adapter class folder. RecyclerView includes a new kind of adapter. It’s a similar approach to the ones you already used, but with some peculiarities, such as a required ViewHolder. You will have to override two main methods: one to inflate the view and its view holder, and another one to bind data to the view. The good thing about this is that the first method is called only when we really need to create a new view. No need to check if it’s being recycled.
 
-The following image describes about the structure of the project in MVVM format:
-![MVVM](https://github.com/NSU-SP21-CSE486-1/1431000-SP21-CSE486-S01/blob/957fe192554cbb2e9e2bb3a6632b0cf8df286368/Project/MVVM.jpg)
-
 
 The Following are the snapshots of the project:
 
