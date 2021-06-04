@@ -11,4 +11,5 @@
 
     <color name="lime">#66EC74</color>
     <color name="green">#146725</color>
+    <color name="toolbarColor">#4761A1</color>
 </resources>
