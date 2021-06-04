@@ -30,8 +30,8 @@ public class DashboardActivity extends AppCompatActivity {
 
         btn_postjob.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PostJobActivity.class));
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), InsertJobActivity.class));
 
             }
         });

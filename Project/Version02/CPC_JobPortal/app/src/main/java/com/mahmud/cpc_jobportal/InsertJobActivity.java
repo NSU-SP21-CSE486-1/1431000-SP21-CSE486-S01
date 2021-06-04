@@ -3,6 +3,7 @@ package com.mahmud.cpc_jobportal;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -39,14 +40,14 @@ public class InsertJobActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.insert_job_toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Create Job");
+        getSupportActionBar().setTitle("Post Job");
 
         //Firebase Authentication
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser mUser = mAuth.getCurrentUser();
         String uID = mUser.getUid(); //get uID from the firestore database
-        mJobPost = FirebaseDatabase.getInstance()
-                .getReference().child("Job Post").child(uID);//Job Post database
+        mJobPost = FirebaseDatabase.getInstance().getReference().child("Job Post").child(uID);
+        //Job Post database
 
         InsertJob();
 
@@ -62,7 +63,7 @@ public class InsertJobActivity extends AppCompatActivity {
         post_button = findViewById(R.id.button_postjob);
         post_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 String position = position_name.getText().toString().trim();
                 String company = company_name.getText().toString().trim();
                 String description = job_description.getText().toString().trim();
@@ -94,7 +95,7 @@ public class InsertJobActivity extends AppCompatActivity {
                 //Adding data to firebase database
 
                 Toast.makeText(getApplicationContext(), "Data entered!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), PostJobActivity.class));
+                startActivity(new Intent(getApplicationContext(), InsertJobActivity.class));
 
 
 

@@ -1,15 +1,17 @@
 package com.mahmud.cpc_jobportal.Model;
 
 public class JobData {
-    String postion, company, description, salary;
+    String position, company, description, salary;
     String id, date;
+
 
     public JobData(){
 
     }
 
-    public JobData(String postion, String company, String description, String salary, String id, String date) {
-        this.postion = postion;
+
+    public JobData(String position, String company, String description, String salary, String id, String date) {
+        this.position = position;
         this.company = company;
         this.description = description;
         this.salary = salary;
@@ -17,12 +19,12 @@ public class JobData {
         this.date = date;
     }
 
-    public String getPostion() {
-        return postion;
+    public String getPosition() {
+        return position;
     }
 
-    public void setPostion(String postion) {
-        this.postion = postion;
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     public String getCompany() {
@@ -65,3 +67,4 @@ public class JobData {
         this.date = date;
     }
 }
+
