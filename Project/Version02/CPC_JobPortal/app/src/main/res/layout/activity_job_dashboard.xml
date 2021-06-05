@@ -7,7 +7,7 @@
     android:background="#BABABA"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".DashboardActivity">
+    tools:context=".JobDashboardActivity">
 
 
 

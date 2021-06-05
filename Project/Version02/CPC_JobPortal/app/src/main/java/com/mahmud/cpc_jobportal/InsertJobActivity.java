@@ -23,7 +23,7 @@ import java.util.Date;
 
 public class InsertJobActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
+    //private Toolbar toolbar;
 
     private EditText position_name, company_name, job_description, job_salary;
 
@@ -38,9 +38,9 @@ public class InsertJobActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert_job);
 
-        toolbar = findViewById(R.id.insert_job_toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Post Job");
+//        toolbar = findViewById(R.id.insert_job_toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Post Job");
 
         //Firebase Authentication
         mAuth = FirebaseAuth.getInstance();
@@ -60,7 +60,7 @@ public class InsertJobActivity extends AppCompatActivity {
         job_description = findViewById(R.id.job_description);
         job_salary = findViewById(R.id.salary);
 
-        post_button = findViewById(R.id.button_postjob);
+        post_button = findViewById(R.id.button_jobPost);
         post_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

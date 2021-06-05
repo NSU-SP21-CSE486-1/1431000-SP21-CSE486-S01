@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".InsertJobActivity">
+    tools:context=".InsertStudentActivity">
 
     <include layout="@layout/toolbar"
-        android:id="@+id/insert_job_toolbar"/>
+        android:id="@+id/insert_student_toolbar"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,11 +29,11 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/position_label"
+                        android:id="@+id/name_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
-                        android:text="Position Name: "
+                        android:text="Full Name: "
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -47,42 +47,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/position_name"
-                         />
-
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="2"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/Company_label"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="20dp"
-                        android:text="Company Name: "
-                        android:textSize="15dp"
-                        android:textStyle="bold" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="3"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/company_name"
+                        android:id="@+id/student_name"
                         />
 
                 </RelativeLayout>
@@ -99,11 +64,11 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/Description_label"
+                        android:id="@+id/id_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
-                        android:text="Job Description: "
+                        android:text="Student ID: "
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -117,7 +82,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/job_description"
+                        android:id="@+id/student_id"
                         />
 
                 </RelativeLayout>
@@ -134,11 +99,11 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/salary_label"
+                        android:id="@+id/department_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
-                        android:text="Salary: "
+                        android:text="Department "
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -152,19 +117,128 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/salary"
+                        android:id="@+id/student_department"
                         />
 
                 </RelativeLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/address_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Address "
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/address"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/phone_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Phone: "
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phone"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/dob_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Date of Birth:  "
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dob"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
 
             <Button
-                android:id="@+id/button_jobPost"
+                android:id="@+id/button_addStudent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="@drawable/button_color2"
-                android:text="Post Job"
+                android:text="Add Record"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp" />
 

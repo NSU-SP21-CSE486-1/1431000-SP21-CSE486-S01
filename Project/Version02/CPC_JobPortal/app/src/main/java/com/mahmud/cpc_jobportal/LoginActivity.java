@@ -10,7 +10,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -69,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
                                 Toast.makeText(getApplicationContext(), "Correct Credentials, Successful!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                                startActivity(new Intent(getApplicationContext(), JobDashboardActivity.class));
 
                                 mDialog.dismiss();
                             }else{

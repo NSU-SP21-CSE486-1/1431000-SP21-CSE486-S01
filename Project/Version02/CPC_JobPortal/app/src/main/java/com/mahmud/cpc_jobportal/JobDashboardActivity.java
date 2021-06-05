@@ -2,21 +2,20 @@ package com.mahmud.cpc_jobportal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class DashboardActivity extends AppCompatActivity {
+public class JobDashboardActivity extends AppCompatActivity {
 
     private Button btn_alljob, btn_postjob;
 
-    @SuppressLint("WrongViewCast")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_job_dashboard);
 
         btn_alljob = findViewById(R.id.button_alljobs);
         btn_postjob = findViewById(R.id.button_postjob);
@@ -30,7 +29,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         btn_postjob.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), InsertJobActivity.class));
 
             }

@@ -75,7 +75,7 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(getApplicationContext(), "Successful Register!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                            startActivity(new Intent(getApplicationContext(), JobDashboardActivity.class));
 
                         }else{
                             Toast.makeText(getApplicationContext(), "Registration failed. Invalid!", Toast.LENGTH_SHORT).show();
