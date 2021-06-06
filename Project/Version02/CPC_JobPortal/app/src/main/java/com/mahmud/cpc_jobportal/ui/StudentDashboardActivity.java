@@ -11,25 +11,25 @@ import com.mahmud.cpc_jobportal.R;
 
 public class StudentDashboardActivity extends AppCompatActivity {
 
-    private Button btn_addrecord, btn_viewjobs, btn_logoutStudent;
+    private Button btn_addRecord, btn_viewJobs, btn_logoutStudent;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_dashboard);
+        setContentView(R.layout.activity_student_dashboard);
 
-        btn_addrecord = findViewById(R.id.button_addRecord);
-        btn_viewjobs = findViewById(R.id.button_viewjobs);
+        btn_addRecord = findViewById(R.id.button_addRecord);
+        btn_viewJobs = findViewById(R.id.button_viewJobs);
 
-        btn_addrecord.setOnClickListener(new View.OnClickListener() {
+        btn_addRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), InsertStudentActivity.class));
             }
         });
 
-        btn_viewjobs.setOnClickListener(new View.OnClickListener() {
+        btn_viewJobs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), AvailableJobsActivity.class));

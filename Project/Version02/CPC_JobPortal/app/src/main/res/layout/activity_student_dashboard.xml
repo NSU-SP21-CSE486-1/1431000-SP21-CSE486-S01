@@ -28,26 +28,24 @@
         android:layout_height="52dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/button_color2"
-        android:text="Add record"
+        android:text="Add Record"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_viewjobs"
+        app:layout_constraintTop_toBottomOf="@+id/button_viewJobs"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button_viewjobs"
+        android:id="@+id/button_viewJobs"
         android:layout_width="135dp"
         android:layout_height="51dp"
         android:background="@drawable/button_color"
-        android:text="See available jobs"
+        android:text="Available Jobs"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="336dp" />
-
-
 
     <Button
         android:id="@+id/button_logout_student"
