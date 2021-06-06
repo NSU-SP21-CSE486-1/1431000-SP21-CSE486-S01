@@ -111,13 +111,21 @@
 
                 <RelativeLayout
                     android:layout_width="0dp"
-                    android:layout_weight="3"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/student_department"
+                        android:id="@+id/department"
+                        android:hint="Choose your Dept."
+                        />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/department_spinner"
                         />
 
                 </RelativeLayout>
@@ -219,11 +227,17 @@
                     android:layout_weight="3"
                     android:layout_height="wrap_content">
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/dob"
-                        />
+
+
+                        <TextView
+                            android:id="@+id/date_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Select Birthdate"
+                            android:inputType="date"
+                            android:layout_marginTop="10sp"/>
+
+
 
                 </RelativeLayout>
             </LinearLayout>

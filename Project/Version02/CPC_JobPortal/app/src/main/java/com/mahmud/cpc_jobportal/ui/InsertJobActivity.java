@@ -29,7 +29,7 @@ public class InsertJobActivity extends AppCompatActivity {
 
     private Button post_button;
     private FirebaseAuth mAuth; //Firebase Auth
-    private DatabaseReference mJobPost;
+    private DatabaseReference jobReference;
 
 
 
@@ -46,7 +46,7 @@ public class InsertJobActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser mUser = mAuth.getCurrentUser();
         String uID = mUser.getUid(); //get uID from the firestore database
-        mJobPost = FirebaseDatabase.getInstance().getReference().child("Job Post").child(uID);
+        jobReference = FirebaseDatabase.getInstance().getReference().child("Job Post").child(uID);
         //Job Post database
 
         InsertJob();
@@ -86,11 +86,11 @@ public class InsertJobActivity extends AppCompatActivity {
                     return;
                 }
 
-                String id = mJobPost.push().getKey(); //Random Key generate for specific uID
+                String id = jobReference.push().getKey(); //Random Key generate for specific uID
                 String date = DateFormat.getDateInstance().format(new Date());
 
-                JobData jobData = new JobData(position, company, description, salary, id, date);
-                mJobPost.child(id).setValue(jobData);
+                JobData jobData = new JobData(id, position, company, description, salary, date);
+                jobReference.child(id).setValue(jobData);
 
                 //Adding data to firebase database
 

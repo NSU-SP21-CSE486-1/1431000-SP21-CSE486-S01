@@ -158,6 +158,7 @@
                 </RelativeLayout>
             </LinearLayout>
 
+
             <Button
                 android:id="@+id/button_jobPost"
                 android:layout_width="match_parent"

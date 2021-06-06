@@ -57,6 +57,7 @@
             android:layout_margin="10dp"
             android:hint="Enter your Passsword"
             android:textColor="#FFFFFF"
+            android:inputType="textPassword"
             android:textColorHint="#FFFFFF" />
 
         <Button
