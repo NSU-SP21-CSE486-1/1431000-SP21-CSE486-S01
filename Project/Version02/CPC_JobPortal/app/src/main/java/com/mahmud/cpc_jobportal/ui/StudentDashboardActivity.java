@@ -11,7 +11,7 @@ import com.mahmud.cpc_jobportal.R;
 
 public class StudentDashboardActivity extends AppCompatActivity {
 
-    private Button btn_addrecord, btn_viewjobs;
+    private Button btn_addrecord, btn_viewjobs, btn_logoutStudent;
 
 
     @Override
@@ -34,6 +34,15 @@ public class StudentDashboardActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), AvailableJobsActivity.class));
 
+            }
+        });
+
+        //Logging out
+        btn_logoutStudent = findViewById(R.id.button_logout_student);
+        btn_logoutStudent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), StudentLoginActivity.class));
             }
         });
 

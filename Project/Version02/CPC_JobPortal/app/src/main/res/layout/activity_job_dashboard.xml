@@ -47,6 +47,18 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="336dp" />
 
+    <Button
+        android:id="@+id/button_logout_company"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:background="@drawable/logout_button"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="336dp" />
+
 
 
 

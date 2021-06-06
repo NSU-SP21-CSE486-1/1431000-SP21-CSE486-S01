@@ -7,7 +7,7 @@
     android:background="#BABABA"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ui.JobDashboardActivity">
+    tools:context=".ui.StudentDashboardActivity">
 
 
 
@@ -41,6 +41,20 @@
         android:layout_height="51dp"
         android:background="@drawable/button_color"
         android:text="See available jobs"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="336dp" />
+
+
+
+    <Button
+        android:id="@+id/button_logout_student"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:background="@drawable/logout_button"
+        android:text="Logout"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
