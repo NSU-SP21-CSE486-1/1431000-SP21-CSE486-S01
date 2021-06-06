@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DATE_DESCRIPTION>>>>"
+            android:text="DATE_ADDED:"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:padding="10dp"
             android:textColor="@color/green"
@@ -49,8 +49,6 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FF18288E"
             android:textStyle="bold" />
-
-
 
     </LinearLayout>
 

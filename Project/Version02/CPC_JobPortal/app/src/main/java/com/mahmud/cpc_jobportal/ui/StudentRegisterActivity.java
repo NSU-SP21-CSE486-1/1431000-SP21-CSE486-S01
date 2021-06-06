@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.mahmud.cpc_jobportal.Model.StudentData;
 import com.mahmud.cpc_jobportal.R;
-import com.mahmud.cpc_jobportal.viewmodel.StudentsRecord;
+
 
 public class StudentRegisterActivity extends AppCompatActivity {
 

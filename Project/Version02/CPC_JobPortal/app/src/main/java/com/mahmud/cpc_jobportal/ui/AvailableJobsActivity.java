@@ -10,81 +10,50 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mahmud.cpc_jobportal.Model.JobData;
+import com.mahmud.cpc_jobportal.Model.StudentData;
 import com.mahmud.cpc_jobportal.R;
+import com.mahmud.cpc_jobportal.adapter.JobAdapter;
 
 import org.w3c.dom.Text;
 
 public class AvailableJobsActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
+    RecyclerView recyclerView;
+    JobAdapter adapter;
 
-    //Firebase Database
-
-    FirebaseAuth mAuth;
-    DatabaseReference JobPostDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_available_jobs);
 
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_job_post_id);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        mAuth = FirebaseAuth.getInstance();
-        FirebaseUser mUser = mAuth.getCurrentUser(); //CHECK THIS LINE FOR REFERENCE
-
-        String uID = mUser.getUid();
-
-        JobPostDB = FirebaseDatabase.getInstance().getReference().child("Job Post").child(uID);
-
-
-        recyclerView = findViewById(R.id.recycler_job_post_id);
-        //LayoutManaging
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        layoutManager.setStackFromEnd(true);
-        layoutManager.setReverseLayout(true);
-
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(layoutManager);
+        FirebaseRecyclerOptions<JobData> options =
+                new FirebaseRecyclerOptions.Builder<JobData>()
+                .setQuery(FirebaseDatabase.getInstance().getReference().child("Job Post"), JobData.class).build();
 
 
-
-
+        adapter = new JobAdapter(options);
+        recyclerView.setAdapter(adapter);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        adapter.startListening();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
-        View myView;
-
-        public MyViewHolder(View itemView) {
-            super(itemView);
-            myView = itemView;
-        }
-        public void setJobTitle(String position){
-            TextView mPosition = myView.findViewById(R.id.job_name);
-            mPosition.setText(position);
-        }
-
-        public void setJobDate(String date){
-            TextView mDate = myView.findViewById(R.id.job_post_date);
-            mDate.setText(date);
-        }
-
-        public void setJobDescription(String description){
-            TextView mDescription = myView.findViewById(R.id.job_description);
-            mDescription.setText(description);
-        }
-
-        public void setJobSalary(String salary){
-            TextView mSalary = myView.findViewById(R.id.job_salary);
-            mSalary.setText(salary);
-        }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
     }
 }
