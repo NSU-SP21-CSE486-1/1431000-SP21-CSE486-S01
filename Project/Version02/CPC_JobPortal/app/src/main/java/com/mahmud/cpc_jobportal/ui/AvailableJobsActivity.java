@@ -1,8 +1,10 @@
-package com.mahmud.cpc_jobportal;
+package com.mahmud.cpc_jobportal.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.mahmud.cpc_jobportal.R;
 
 public class AvailableJobsActivity extends AppCompatActivity {
 

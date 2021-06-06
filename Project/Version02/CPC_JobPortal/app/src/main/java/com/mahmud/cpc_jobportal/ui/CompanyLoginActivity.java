@@ -1,4 +1,4 @@
-package com.mahmud.cpc_jobportal;
+package com.mahmud.cpc_jobportal.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,8 +16,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.mahmud.cpc_jobportal.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class CompanyLoginActivity extends AppCompatActivity {
 
     private EditText email, password;
 
@@ -30,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_company_login);
 
         mAuth = FirebaseAuth.getInstance();
         mDialog = new ProgressDialog(this);
@@ -40,11 +41,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void LoginFunction(){
-        email = findViewById(R.id.email_login);
-        password = findViewById(R.id.password_login);
+        email = findViewById(R.id.email_login_company);
+        password = findViewById(R.id.password_login_company);
 
-        btn_login = findViewById(R.id.button_login);
-        btn_register = findViewById(R.id.button_register);
+        btn_login = findViewById(R.id.button_login_company);
+        btn_register = findViewById(R.id.button_register_company);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
+                startActivity(new Intent(getApplicationContext(), CompanyRegisterActivity.class));
                 
             }
         });

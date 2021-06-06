@@ -1,12 +1,13 @@
-package com.mahmud.cpc_jobportal;
+package com.mahmud.cpc_jobportal.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.InsetDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.mahmud.cpc_jobportal.R;
 
 public class StudentDashboardActivity extends AppCompatActivity {
 

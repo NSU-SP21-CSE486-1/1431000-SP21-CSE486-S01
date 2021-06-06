@@ -1,4 +1,4 @@
-package com.mahmud.cpc_jobportal;
+package com.mahmud.cpc_jobportal.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +15,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.mahmud.cpc_jobportal.R;
 
-public class RegisterActivity extends AppCompatActivity {
+public class CompanyRegisterActivity extends AppCompatActivity {
 
-    private EditText name_reg, id_reg, email_reg, password_reg;
+    private EditText name_reg, email_reg, password_reg;
     private Button btn_reg;
     private Button btn_login;
 
@@ -30,7 +31,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_company_register);
 
         mAuth = FirebaseAuth.getInstance();
         //Created separate function for readability
@@ -39,12 +40,11 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void Registration() {
-        name_reg = findViewById(R.id.name_register);
-        id_reg = findViewById(R.id.id_register);
-        email_reg = findViewById(R.id.email_register);
-        password_reg = findViewById(R.id.password_register);
+        name_reg = findViewById(R.id.name_register_company);
+        email_reg = findViewById(R.id.email_register_company);
+        password_reg = findViewById(R.id.password_register_company);
 
-        btn_reg = findViewById(R.id.button_register);
+        btn_reg = findViewById(R.id.btn_register_company);
         btn_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,12 +88,12 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
 
-        btn_login = findViewById(R.id.button_login);
+        btn_login = findViewById(R.id.btn_login_company);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Redirecting to the Login screen
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), CompanyLoginActivity.class));
 
 
             }
@@ -106,6 +106,4 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
-
-
 }

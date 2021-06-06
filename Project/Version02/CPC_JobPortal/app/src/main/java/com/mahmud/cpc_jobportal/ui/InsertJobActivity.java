@@ -1,7 +1,6 @@
-package com.mahmud.cpc_jobportal;
+package com.mahmud.cpc_jobportal.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 
 import android.content.Intent;
@@ -17,6 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.mahmud.cpc_jobportal.Model.JobData;
+import com.mahmud.cpc_jobportal.R;
 
 import java.text.DateFormat;
 import java.util.Date;

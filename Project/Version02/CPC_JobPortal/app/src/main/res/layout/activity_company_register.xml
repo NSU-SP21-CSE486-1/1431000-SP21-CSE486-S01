@@ -5,14 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_color"
+    android:background="@drawable/background_color2"
     android:gravity="center"
-    tools:context=".LoginActivity">
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    tools:context=".ui.CompanyRegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,22 +31,31 @@
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:shadowColor="#1E0303"
-            android:text="Log In"
+            android:text="Register to Create Jobs"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="#FFFFFF"
             android:textSize="36sp" />
 
         <EditText
-            android:id="@+id/email_login"
+            android:id="@+id/name_register_company"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="Enter your email"
+            android:hint="Enter Company Name"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF" />
 
         <EditText
-            android:id="@+id/password_login"
+            android:id="@+id/email_register_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter company email"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/password_register_company"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -60,27 +64,27 @@
             android:textColorHint="#FFFFFF" />
 
         <Button
-            android:id="@+id/button_login"
+            android:id="@+id/btn_register_company"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/button_color"
+            android:background="@drawable/button_color2"
             android:fontFamily="monospace"
             android:includeFontPadding="true"
-            android:text="Log In"
+            android:text="Register"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/button_register"
+            android:id="@+id/btn_login_company"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/button_color"
+            android:background="@drawable/button_color2"
             android:fontFamily="monospace"
             android:includeFontPadding="true"
             android:shadowColor="#754F4F"
-            android:text="Register Here"
+            android:text="Have and account? Login."
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             app:strokeColor="#D1ABAB" />

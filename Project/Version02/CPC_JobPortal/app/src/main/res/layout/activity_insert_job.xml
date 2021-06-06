@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".InsertJobActivity">
+    tools:context=".ui.InsertJobActivity">
 
     <include layout="@layout/toolbar"
         android:id="@+id/insert_job_toolbar"/>
