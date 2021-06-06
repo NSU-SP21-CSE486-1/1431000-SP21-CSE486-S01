@@ -3,14 +3,14 @@ package com.mahmud.cpc_jobportal.Model;
 import java.util.Date;
 
 public class StudentData {
-    String id, name, department, present_address, phone;
-    Date dob;
+    String id, name, department, present_address, phone, dob;
+
 
     public StudentData(){
 
     }
 
-    public StudentData(String id, String name, String department, String present_address, String phone, Date dob) {
+    public StudentData(String id, String name, String department, String present_address, String phone, String dob) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -59,11 +59,11 @@ public class StudentData {
         this.phone = phone;
     }
 
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 }

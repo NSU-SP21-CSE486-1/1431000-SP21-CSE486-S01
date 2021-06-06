@@ -26,21 +26,15 @@ public class InsertJobActivity extends AppCompatActivity {
     //private Toolbar toolbar;
 
     private EditText position_name, company_name, job_description, job_salary;
-
     private Button post_button;
     private FirebaseAuth mAuth; //Firebase Auth
     private DatabaseReference jobReference;
 
-
-
+//On Create
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert_job);
-
-//        toolbar = findViewById(R.id.insert_job_toolbar);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setTitle("Post Job");
 
         //Firebase Authentication
         mAuth = FirebaseAuth.getInstance();
@@ -94,8 +88,8 @@ public class InsertJobActivity extends AppCompatActivity {
 
                 //Adding data to firebase database
 
-                Toast.makeText(getApplicationContext(), "Data entered!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), InsertJobActivity.class));
+                Toast.makeText(getApplicationContext(), "Data entered Successfully!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), JobDashboardActivity.class));
 
 
 
