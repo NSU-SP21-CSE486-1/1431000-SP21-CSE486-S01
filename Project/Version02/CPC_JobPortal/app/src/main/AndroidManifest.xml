@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CPC_JobPortal">
-        <activity android:name=".ui.CompanyRegisterActivity"></activity>
+
+        <activity android:name=".ui.CompanyRegisterActivity" ></activity>
         <activity android:name=".ui.StudentLoginActivity" />
         <activity android:name=".ui.StudentDashboardActivity" />
         <activity android:name=".ui.InsertStudentActivity" />
@@ -18,7 +19,8 @@
         <activity android:name=".ui.JobDashboardActivity" />
         <activity android:name=".ui.StudentRegisterActivity" />
         <activity android:name=".ui.CompanyLoginActivity" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.MainActivity"/>
+        <activity android:name=".ui.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

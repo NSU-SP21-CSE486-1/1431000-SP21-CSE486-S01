@@ -4,11 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BABABA"
+    android:background="#8E9CCF"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".ui.StudentDashboardActivity">
 
+    <TextView
+        android:id="@+id/welcome_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome,"
+        android:textSize="50dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/emailaddresstitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address: "
+        android:textStyle="normal"/>
 
 
     <TextView
@@ -16,7 +29,8 @@
         android:layout_width="285dp"
         android:layout_height="59dp"
         android:text="Choose your option:"
-        android:textSize="30sp"
+        android:textAlignment="gravity"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"

@@ -26,6 +26,7 @@ public class AvailableJobsActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     JobAdapter adapter;
+    DatabaseReference jobReference;
 
 
     @Override
@@ -33,16 +34,25 @@ public class AvailableJobsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_available_jobs);
 
+        jobReference = FirebaseDatabase.getInstance().getReference().child("Job Post");
+        jobReference.keepSynced(true);
+
         recyclerView = (RecyclerView) findViewById(R.id.recycler_job_post_id);
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<JobData> options =
-                new FirebaseRecyclerOptions.Builder<JobData>()
-                .setQuery(FirebaseDatabase.getInstance().getReference().child("Job Post"), JobData.class).build();
 
 
-        adapter = new JobAdapter(options);
-        recyclerView.setAdapter(adapter);
+//        recyclerView = (RecyclerView) findViewById(R.id.recycler_job_post_id);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//
+//        FirebaseRecyclerOptions<JobData> options =
+//                new FirebaseRecyclerOptions.Builder<JobData>()
+//                .setQuery(FirebaseDatabase.getInstance().getReference().child("Job Post"), JobData.class).build();
+//
+//
+//        adapter = new JobAdapter(options);
+//        recyclerView.setAdapter(adapter);
     }
 
     @Override
@@ -50,10 +60,10 @@ public class AvailableJobsActivity extends AppCompatActivity {
         super.onStart();
         adapter.startListening();
     }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        adapter.stopListening();
-    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        adapter.stopListening();
+//    }
 }
